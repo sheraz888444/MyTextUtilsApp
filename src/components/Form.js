@@ -55,7 +55,7 @@ const handlelowerCase = () => {
      </button>
 <div className='container'>
     <h2>Text Summery </h2>
-    <p>{text.split(' ').length} words</p>
+    <p>{text.split(' ').filter((element)=>{return element.length!==0}).length} words</p>
     <p>{text.length} characters</p>
      <p>{0.008 * text.split(' ').length} Minuites to read</p>
 

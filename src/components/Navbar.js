@@ -19,10 +19,10 @@ return(
         <li className="nav-item">
           <Link className="nav-Link" style={{textDecoration:'none'}}to="/About">About</Link>
         </li>
-        
           </ul>
-      
-    
+      <div className='d-flex'>
+        <div className='bg-primary rounded mx-2' style={{height:'30px',width:'30px'}}></div>
+      </div>
         <div className="form-check form-switch">
   <input className={`form-check-input text-${props.mode==='light'?'dark':'light'}`} onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
     <label className={`form-check-label text-${props.mode==='light'?'dark':'light'}`} htmlFor="switchCheckDefault">Dark Mode</label>
