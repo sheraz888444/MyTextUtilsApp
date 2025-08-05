@@ -39,6 +39,7 @@ document.title='Textutils App -Light Mode'
   <Router>
       <Navbar title="my app" mode={mode} toggleMode={toggleMode} /> 
       
+      
       <Routes>     {/* switch is exchange with routes in new version of react router */}
         <Route path="/" element={<Form heading="Enter a Text To Analyze:"/>} />     {/* Default page  */}
          <Route path="/About" element={<About />} />  

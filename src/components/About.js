@@ -1,52 +1,33 @@
-import React from 'react'
+import React from 'react';
 
 export default function About() {
-  let myStyle={
-    backgroundColor:"black",
-    color:"white"
-  }
+  let myStyle = {
+    backgroundColor: 'black',
+    color: 'white',
+    padding: '20px',
+    borderRadius: '8px'
+  };
+
   return (
-    <div>
-
-<div className="accordion" id="accordionExample" style={myStyle}>
-  <div className="accordion-item">
-    <h2 className="accordion-header">
-      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" className="accordion-collapse collapse show" style={myStyle} data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        <strong>This is the first items accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+    <div className="container my-4" style={myStyle}>
+      <h1 className="mb-4">About TextUtils</h1>
+      <p>
+        <strong>TextUtils</strong> is a powerful and user-friendly text manipulation utility designed to help users efficiently process, analyze, and transform their text data. Whether you're a developer, writer, or student, TextUtils offers a suite of intuitive tools to perform common text operations such as:
+      </p>
+      <ul>
+        <li>Converting text to uppercase or lowercase</li>
+        <li>Removing extra spaces</li>
+        <li>Copying text with a single click</li>
+        <li>Counting words and characters</li>
+        <li>Estimating reading time</li>
+      </ul>
+      <p>
+        The app features a responsive, clean UI with light/dark mode support for better accessibility and user experience. It is built with modern React practices and is optimized for performance.
+      </p>
+      <hr />
+      <p className="mt-4">
+        <em>Developed with passion and precision by <strong>Sheraz Ahmed</strong>, this application aims to simplify everyday text processing tasks for users across various domains.</em>
+      </p>
     </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header">
-      <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" className="accordion-collapse collapse" style={myStyle} data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        <strong>This is the second items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div className="accordion-item">
-    <h2 className="accordion-header">
-      <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" className="accordion-collapse collapse" style={myStyle} data-bs-parent="#accordionExample">
-      <div className="accordion-body">
-        <strong>This is the third items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-  )
+  );
 }
